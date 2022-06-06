@@ -1,0 +1,7 @@
+DROP VIEW AllLateTasks
+DROP VIEW NotStartedTasks
+DROP VIEW Projects
+DROP VIEW ProjectsOverBudget
+DROP VIEW ProjectTasks
+DROP VIEW ResourceAssignments
+DROP VIEW FlatAssignemntsView

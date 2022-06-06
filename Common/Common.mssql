@@ -1,0 +1,27 @@
+CREATE VIEW Projects
+AS
+SELECT [msdyn_projectid]
+,[msdyn_subject]
+,[msdyn_customername]
+,[msdyn_scheduledstart]
+,[msdyn_progress]
+,[msdyn_finish]
+,[msdyn_totalactualcost]
+,[msdyn_costestimateatcomplete]
+,[msdyn_costconsumption]
+,[msdyn_totalplannedcost]
+,[msdyn_projectmanagername]
+,[msdyn_effortremaining]
+,[msdyn_schedulevariance]
+,[msdyn_costvariance]
+FROM [dataverse_schedtest_unq4dc6f060c8a9443ea5fcdd138d855].[dbo].[msdyn_project]
+GO
+
+CREATE VIEW AllLateTasks
+AS 
+SELECT [msdyn_project] AS msdyn_projectid
+,COUNT([msdyn_projecttask].[msdyn_effort]) AS CountOfLateTasks
+ FROM [dataverse_schedtest_unq4dc6f060c8a9443ea5fcdd138d855].[dbo].[msdyn_projecttask]
+ WHERE [msdyn_projecttask].[msdyn_finish]<CURRENT_TIMESTAMP AND [msdyn_projecttask].[msdyn_effortremaining]>0
+ GROUP BY [msdyn_projecttask].[msdyn_project]
+GO

@@ -1,0 +1,7 @@
+CREATE VIEW ProjectsOverBudget
+AS
+SELECT [msdyn_projectid] 
+,[msdyn_totalactualcost]-[msdyn_totalplannedcost] AS DifferenceInBudget
+ FROM [dataverse_schedtest_unq4dc6f060c8a9443ea5fcdd138d855].[dbo].[msdyn_project]
+ WHERE [msdyn_project].[msdyn_totalactualcost]>[msdyn_project].[msdyn_totalplannedcost]
+ GO

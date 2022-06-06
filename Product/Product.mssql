@@ -1,0 +1,39 @@
+CREATE VIEW ProjectTasks
+AS
+SELECT [msdyn_projecttaskid]
+,[msdyn_subject]
+,[msdyn_parenttaskname]
+,[msdyn_project] AS msdyn_projectid
+,[msdyn_finish]
+,[msdyn_progress]
+,[msdyn_effortremaining]
+,[msdyn_effortcompleted]
+FROM  [dataverse_schedtest_unq4dc6f060c8a9443ea5fcdd138d855].[dbo].[msdyn_projecttask]
+GO
+
+CREATE VIEW ResourceAssignments
+AS
+SELECT [msdyn_bookableresourceidname]
+,[msdyn_bookableresourceid]
+,[msdyn_taskid]
+,[msdyn_taskidname]
+,[msdyn_projectid]
+FROM  [dataverse_schedtest_unq4dc6f060c8a9443ea5fcdd138d855].[dbo].[msdyn_resourceassignment]
+GO
+
+CREATE VIEW NotStartedTasks
+AS 
+SELECT [msdyn_project] AS msdyn_projectid
+,COUNT([msdyn_projecttask].[msdyn_effort]) AS CountOfNotStartedTasks
+ FROM [dataverse_schedtest_unq4dc6f060c8a9443ea5fcdd138d855].[dbo].[msdyn_projecttask]
+ WHERE [msdyn_projecttask].[msdyn_scheduledstart]<CURRENT_TIMESTAMP AND [msdyn_projecttask].[msdyn_effortcompleted]=0
+ GROUP BY [msdyn_projecttask].[msdyn_project]
+ GO
+
+CREATE VIEW FlatAssignemntsView
+AS
+SELECT Assignments.[msdyn_taskid]
+,STRING_AGG(Assignments.[msdyn_bookableresourceidname], ',') AS ResourceName
+FROM[dataverse_schedtest_unq4dc6f060c8a9443ea5fcdd138d855].[dbo].[msdyn_resourceassignment] AS Assignments
+GROUP BY Assignments.msdyn_taskid 
+GO

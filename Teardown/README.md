@@ -1,0 +1,1 @@
+Through this SQL file the views will be dropped that are in SQL database.

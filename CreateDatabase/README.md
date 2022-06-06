@@ -1,0 +1,1 @@
+Through this SQL file a database will be created named as SampleDatabase
