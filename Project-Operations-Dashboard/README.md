@@ -9,7 +9,7 @@ This feature will be in Dynamics 365 Project Operations application, the dashboa
 The data flow from Microsoft Dataverse to ADLS is automatated. there are few steps we need to follow to get this working.
 
 1) Go to this link https://make.preview.powerapps.com/environments, you can see something like this.
-![Time line view](https://github.com/microsoft/Dynamics365-Project-Operations-PowerApps/blob/main/images/PowerApps.png?raw=true)
+![Time line view](https://github.com/anjali030500/Dynamics365-Project-Operations-PowerApps/blob/main/images/PowerApps.png?raw=true)
 
 
 
