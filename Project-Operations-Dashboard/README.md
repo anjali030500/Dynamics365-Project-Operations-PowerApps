@@ -1,8 +1,20 @@
 # Project Operations Dashboard
 
-This feature will be in Dynamics 365 Project Operations application, the dashboards throgh which the customers will be able to visualize the data of Project Operations Application.
+This feature will be in Dynamics 365 Project Operations application, the dashboards throgh which the customers will be able to visualize the data of Project Operations Application in Power BI and get insights from it.
 
 # How to use
+
+## Flow from Micrososft Dataverse (CDS) to Azure Data Lake Storage (ADLS)
+
+The data flow from Microsoft Dataverse to ADLS is automatated. there are few steps we need to follow to get this working.
+
+1) Go to this link https://make.preview.powerapps.com/environments, you can see something like this.
+![Time line view](https://github.com/microsoft/Dynamics365-Project-Operations-PowerApps/blob/main/images/PowerApps.png?raw=true)
+
+
+
+
+## SQL SCripts in Azure Synapse Studio to create the views
 
 Under This directory we have SQL-Scripts folder, in that many folders are there in which SQL Scripts are there.
 To start with when we will run these scripts views will be generated.
