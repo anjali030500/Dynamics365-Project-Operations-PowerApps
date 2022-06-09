@@ -10,7 +10,7 @@ For details on each PowerApps please review the `README.md` in the relevant fold
 |----------------|----------|----------|------------|
 | [TIME](time)   |  [Download](https://github.com/microsoft/Dynamics365-Project-Operations-PowerApps/raw/main/time/package/TimeEntry_20220208151927.zip) | ![Time line view](https://github.com/microsoft/Dynamics365-Project-Operations-PowerApps/blob/main/images/time-timeline.png?raw=true) | A mobile canvas PowerApp which allows users to create, edit, submit and recall their time entries |
 | [3x-4x-deprecated-solution](3x-4x-deprecated-solution) | [Download](https://github.com/microsoft/Dynamics365-Project-Operations-PowerApps/raw/main/3x-4x-deprecated-solution/msdyn_ProjectServiceDeprecatedComponents_managed.cab) | | A solution used to allow for the import of customizations from PSA into Project Operations |
-| [3x-4x-deprecated-solution](3x-4x-deprecated-solution) | [Download](https://github.com/microsoft/Dynamics365-Project-Operations-PowerApps/raw/main/3x-4x-deprecated-solution/msdyn_ProjectServiceDeprecatedComponents_managed.cab) | | A solution used to allow for the import of customizations from PSA into Project Operations |
+| [Project-Operations-Dashboard](Project-Operations-Dashboard) | | | Through this our customers will be able to visualize the data and get analytics with the help of Power BI reports  |
 | `README.md`  | | | This README file. | 
 | `LICENSE.md` | | | Details about the MIT License for anyone looking to reuse code in this repository in their own applications |
 
