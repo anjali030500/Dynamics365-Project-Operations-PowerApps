@@ -63,6 +63,9 @@ The data flow from Microsoft Dataverse to ADLS is automatated. there are few ste
 
 ## Connection between Power BI and Serverless SQL Database
 
+1) Download the Power BI report.
+2) Connect it with your Data source by selecting "Get Data" option and then with "Azure Synapse Analytics SQL".
+3) Enter the link and the Power BI will be connected to the data through Direct Query mode.
 
 
 
