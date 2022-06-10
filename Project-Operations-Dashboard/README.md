@@ -72,7 +72,7 @@ To start with, when we will run these scripts views will be generated.
 
 ## Connection between Power BI and Serverless SQL Database
 
-1) Download the Power BI report from ![Power BI Report](../Project-Operations-Dashboard/Project%20Operations%20Dashboard.pbix)
+1) Download the Power BI report from [here](../Project-Operations-Dashboard/Project%20Operations%20Dashboard.pbix)
 2) Connect it with your Data source by selecting "Get Data" option and then with "Azure Synapse Analytics SQL".
 3) Enter the link and the Power BI will be connected to the data through Direct Query mode.
 
