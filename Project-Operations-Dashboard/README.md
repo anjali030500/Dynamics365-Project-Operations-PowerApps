@@ -25,7 +25,7 @@ The data flow from Microsoft Dataverse to ADLS is automatated. there are few ste
 
 2) Now click on GO to home page, you will be redirected here.
 
-![Power Apps Preview](../images/power-apps-preview.jpg.jpg)
+![Power Apps Preview](../images/power-apps-preview.jpg)
 
 3) Click on Dataverse in the right panel under that go to Azure Synapse Link.
 
