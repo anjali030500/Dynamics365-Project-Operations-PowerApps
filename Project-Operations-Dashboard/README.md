@@ -1,6 +1,6 @@
 # Project Operations Dashboard
 
-This feature will be in Dynamics 365 Project Operations application, the dashboards throgh which the customers will be able to visualize the data of Project Operations Application in Power BI and get insights from it.
+Through these Power BI reports customers will be able to visualize the data of Project Operations Application in Power BI and get insights from it.
 
 # How to use
 
@@ -15,12 +15,12 @@ This feature will be in Dynamics 365 Project Operations application, the dashboa
 7) It is recommended that the storage account is created in the same region as the PowerApps environment you plan to use it in.
 8) It is recommended to set replication setting to Read-access geo-redundant storage (RA-GRS).
 
-
 ## Flow from Micrososft Dataverse (CDS) to Azure Data Lake Storage (ADLS)
 
 The data flow from Microsoft Dataverse to ADLS is automatated. there are few steps we need to follow to get this working.
 
 1) Go to this link https://make.preview.powerapps.com/environments, you can see something like this.
+
 ![Power Apps](../images/power-apps.jpg)
 
 2) Now click on GO to home page, you will be redirected here.
@@ -45,6 +45,7 @@ The data flow from Microsoft Dataverse to ADLS is automatated. there are few ste
 ![Dataverse Platform](../images/project-operations-dashboard.jpg)
 
 * Go to Settings->Advanced Settings->Settings->Customizations 
+
 * This page will be displayed now.
 
 ![Settings  Dataverse](../images/settings-project-operations.jpg)
@@ -61,9 +62,19 @@ The data flow from Microsoft Dataverse to ADLS is automatated. there are few ste
 
 * Now the tables will be visible in the manage tables option and we can sync that.
 
+## SQL SCripts in Azure Synapse Studio to create the views
+
+Under this directory we have SQL-Scripts folder, in that many folders are there in which SQL Scripts are there.
+To start with, when we will run these scripts views will be generated.
+
+1) To create the database run the query that is in Createdatabase folder in Azure Synapse Studio.
+2) As the database has been created from the above step, we will create the views that are required to create the visualizations in Power BI.
+3) To create the views run the SQL Scripts that are present in Common, Health and Product directory.
+4) if you want to drop all the views then you can use Teardown directory and run the script that is present in it.
+
 ## Connection between Power BI and Serverless SQL Database
 
-1) Download the Power BI report.
+1) Download the Power BI report from here https://microsoftapc-my.sharepoint.com/:u:/g/personal/t-asewani_microsoft_com/EXtQibSUH8JBp3RnQ6AN0goBakGRfeKNRe5Y7H7aMsMrFQ?e=aJOdPB.
 2) Connect it with your Data source by selecting "Get Data" option and then with "Azure Synapse Analytics SQL".
 3) Enter the link and the Power BI will be connected to the data through Direct Query mode.
 
@@ -84,12 +95,3 @@ The data flow from Microsoft Dataverse to ADLS is automatated. there are few ste
 
 
 
-## SQL SCripts in Azure Synapse Studio to create the views
-
-Under This directory we have SQL-Scripts folder, in that many folders are there in which SQL Scripts are there.
-To start with when we will run these scripts views will be generated.
-
-1) To create the database run the query that is in Createdatabase folder in Azure Synapse Studio.
-2) As the database has been created from the above step, we will create the views that are required to create the visualizations in Power BI.
-3) To create the views run the SQL Scripts that are present in Common, Health and Product directory.
-4) if you want to drop all the views then you can use Teardown directory and run the script that is present in it.
