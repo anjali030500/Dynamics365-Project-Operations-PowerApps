@@ -42,7 +42,13 @@ The data flow from Microsoft Dataverse to ADLS is automatated. There are few ste
 
 ![Dataverse Platform](../images/project-operations-dashboard.jpg)
 
-* Go to Settings->Advanced Settings->Settings->Customizations 
+* Go to Settings under that select Advanced Settings option.->Settings->Customizations 
+
+![Settings option](../images/settings1.2-dataverse.jpg)
+
+* Now go to settings option and choose "Customizations".
+
+![Settings option 2](../images/settings1.3-dataverse.jpg)
 
 * This page will be displayed now.
 
