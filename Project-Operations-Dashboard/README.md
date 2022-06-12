@@ -63,33 +63,49 @@ The data flow from Microsoft Dataverse to ADLS is automatated. There are few ste
 ## SQL SCripts in Azure Synapse Studio to create the views
 
 Under this directory we have SQL-Scripts folder, in that many folders are there in which SQL Scripts are there.
-To start with, when we will run these scripts views will be generated.
+To start with, when we will run these scripts views will be generated. We will run these scripts in Azure Synapse Studio.
+* To open the Azure Synapse Studio, Go to your Synapse Workspace overview, from there you can open Synapse Studio.
+
+![Synapse Studio Overview](../images/synpase-workspace-overview.jpg)
 
 1) To create the database run the query that is in Createdatabase folder in Azure Synapse Studio.
 2) As the database has been created from the above step, we will create the views that are required to create the visualizations in Power BI.
-3) To create the views run the SQL Scripts that are present in Common, Health and Product directory.
+3) To create the views run the SQL Scripts that are present in Common, Health and Product directory and from the scripts replace the dataverse by your dataverse. 
 4) if you want to drop all the views then you can use Teardown directory and run the script that is present in it.
 
 ## Connection between Power BI and Serverless SQL Database
 
 1) Download the Power BI report from [here](../Project-Operations-Dashboard/Project%20Operations%20Dashboard.pbix)
-2) Connect it with your Data source by selecting "Get Data" option and then with "Azure Synapse Analytics SQL".
-3) Enter the link and the Power BI will be connected to the data through Direct Query mode.
+2) Connect it with your Data source by selecting "Get Data" option.
 
+ ![Get Data](../images/get-data.jpg)
 
+3) Choose the SQL server option.
 
+![SQL Server](../images/SQL-server.jpg)
 
+4) Now enter the Server by copying Serverless SQL Endpoint Link from Synapse Workspace.
 
+![Serverless SQL Endpoint Link](../images/serverless-SQL-endpoint-link.jpg)
 
+5) Now enter it here and choose the Direct Query Option.
 
+![Direct Query Option](../images/connection-Power-BI-Database.jpg)
 
+6)Now select all the views under your created database.
 
+![Views Selection](../images/power-BI-views-selection.jpg)
 
+7) Now your Power BI report is ready with the data that is coming from your dataverse platform.
 
+* The Health visualization will look like this, which will represent data related to all the projects.
 
+![Health Visualizations](../images/health-visualizations.jpg)
 
+* If we want to know more about any particular project or want to get information about it, we can use drill through option in Power BI which can be utilized by right clicking that particular project.
 
+![Drill through](../images/drill-through.jpg)
 
+* Now we can see visualizations like this.
 
-
-
+![Product Visualizations](../images/product-visualizations.jpg)
