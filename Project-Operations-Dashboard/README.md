@@ -60,7 +60,7 @@ The data flow from Microsoft Dataverse to ADLS is automatated. There are few ste
 
 * Under components that is on left side, under the entities the table that was not visible during creation of Azure Synapse Link, now enable the "Change Tracking" option.
 
-![Change Tracking option](../images/change-tracking.jpg)
+![Change Tracking option](../images/change-tracking-option.jpg.jpg)
 
 * Now save and publish the changes through the upper ribbon on the plaform.
 
@@ -83,12 +83,9 @@ To start with, when we will run these scripts views will be generated. We will r
 
 1) Download the Power BI report from [here](../Project-Operations-Dashboard/Project%20Operations%20Dashboard.pbix)
 2) Connect it with your Data source by selecting "Get Data" option.
-
- ![Get Data](../images/get-data.jpg)
-
 3) Choose the SQL server option.
 
-![SQL Server](../images/SQL-server.jpg)
+![Get Data](../images/get-data.jpg)
 
 4) Now enter the Server by copying Serverless SQL Endpoint Link from Synapse Workspace.
 
