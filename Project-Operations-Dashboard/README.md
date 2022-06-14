@@ -36,13 +36,16 @@ The data flow from Microsoft Dataverse to ADLS is automatated. There are few ste
 ![Manage Tables](../images/manage-tables-azure-synapse-link.jpg)
 
 6) Now sync these tables that are shown in the image.
+
+![Tables Synced](../images/tables-synced.jpg)
+
 * If the tables are not available when you try to sync then we need to make some changes in the dataverse platform.
 
 *  Go to dataverse platform.
 
 ![Dataverse Platform](../images/project-operations-dashboard.jpg)
 
-* Go to Settings under that select Advanced Settings option.->Settings->Customizations 
+* Go to Settings under that select Advanced Settings option.
 
 ![Settings option](../images/settings1.2-dataverse.jpg)
 
@@ -60,7 +63,7 @@ The data flow from Microsoft Dataverse to ADLS is automatated. There are few ste
 
 * Under components that is on left side, under the entities the table that was not visible during creation of Azure Synapse Link, now enable the "Change Tracking" option.
 
-![Change Tracking option](../images/change-tracking-option.jpg.jpg)
+![Change Tracking option](../images/change-tracking-option.jpg)
 
 * Now save and publish the changes through the upper ribbon on the plaform.
 
